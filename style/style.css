@@ -1,0 +1,55 @@
+/*  Color   */
+:root {
+  --co-0: #ffffff;
+  --co-1: #717171;
+  --co-2: linear-gradient(180deg, #000000, #555555);
+  --co-3: #000000;
+}
+
+.co-0 {
+  color: var(--co-0);
+}
+.co-1 {
+  color: var(--co-1);
+}
+.co-2 {
+  color: var(--co-2);
+}
+.co-3 {
+  color: var(--co-3);
+}
+
+/*  Typography   */
+.font-1-s {
+  font: 500 3rem/1.35 "Inria Serif", serif;
+}
+
+/*  Global   */
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  margin: 0;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
