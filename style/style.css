@@ -68,7 +68,7 @@ a {
 * {
   box-sizing: border-box;
 }
-/*  Introduction   */
+/*   Introduction   */
 .content-bg {
   background-image: url(../img/background.jpg);
   background-position: center;
@@ -113,3 +113,5 @@ a {
     gap: 25px;
   }
 }
+
+/*   About   */
