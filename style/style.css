@@ -44,6 +44,18 @@
   letter-spacing: 6px;
   text-transform: uppercase;
 }
+.font-1-ab {
+  font: 700 2.5rem/1 "Inria Serif", serif;
+}
+.font-2-ab {
+  font: 700 1.2rem/1 "Inria Serif", serif;
+}
+.font-3-ab {
+  font: 700 1.5rem/1 "Inria Serif", serif;
+}
+.font-4-ab {
+  font: 700 1rem/1 "Inria Serif", serif;
+}
 @media (max-width: 1350px) {
   .font-3-s {
     font-size: 4.9rem;
@@ -118,6 +130,10 @@
 body {
   margin: 0;
   padding: 0;
+}
+button {
+  padding: 0;
+  border: none;
 }
 h1,
 h2,
@@ -355,5 +371,73 @@ a {
 @media (max-width: 1000px) {
   .about-content h3:nth-of-type(2) {
     white-space: inherit;
+  }
+}
+
+/*   Products   */
+.products-introduction {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  padding: 0 40px;
+  margin: 0 auto;
+  align-items: center;
+}
+.products-bg .products-introduction {
+  margin-bottom: 150px;
+}
+.products-bg {
+  background-color: var(--co-3);
+}
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1750px;
+  padding: 0 40px;
+  margin: 0 auto;
+  justify-content: space-between;
+  gap: 40px;
+  padding-bottom: 500px;
+}
+.products-item {
+  border: 1px solid transparent;
+  border-image: var(--co-2) 1;
+  justify-items: center;
+  text-align: center;
+  background-color: var(--co-3);
+  flex: 1 1 300px;
+  padding: 15px;
+}
+.products-item img {
+  opacity: 0.5;
+  padding-bottom: 10px;
+  width: 100%;
+  max-width: 300px;
+  min-width: 200px;
+  max-height: 310px;
+}
+.products-item h2 {
+  margin-bottom: 20px;
+}
+.products-item p {
+  max-width: 20ch;
+  margin-bottom: 20px;
+}
+.products-item button {
+  background-color: var(--co-3);
+  padding: 15px 40px;
+  border: 1px solid var(--co-0);
+  cursor: pointer;
+}
+.products-item button:hover {
+  background-color: #161616;
+  transition: 0.3s;
+}
+.products-item:nth-child(even) {
+  transform: translateY(100px);
+}
+@media (max-width: 1399px) {
+  .products-item:nth-child(even) {
+    transform: none;
   }
 }
